@@ -3,7 +3,7 @@ GLobal Directives
 ***/
 
 // Route State Load Spinner(used on page or content load)
-APP.directive('ngSpinnerBar', ['$rootScope', '$state',
+AngularApp.directive('ngSpinnerBar', ['$rootScope', '$state',
     function($rootScope, $state) {
         return {
             link: function(scope, element, attrs) {
@@ -42,7 +42,7 @@ APP.directive('ngSpinnerBar', ['$rootScope', '$state',
 ])
 
 // Handle global LINK click
-APP.directive('a', function() {
+AngularApp.directive('a', function() {
     return {
         restrict: 'E',
         link: function(scope, elem, attrs) {
@@ -56,7 +56,7 @@ APP.directive('a', function() {
 });
 
 // Handle Dropdown Hover Plugin Integration
-APP.directive('dropdownMenuHover', function () {
+AngularApp.directive('dropdownMenuHover', function () {
   return {
     link: function (scope, elem) {
       elem.dropdownHover();

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 
-<!--[if IE 8]> <html lang="en" class="ie8 no-js" data-ng-app="APP"> <![endif]-->
-<!--[if IE 9]> <html lang="en" class="ie9 no-js" data-ng-app="APP"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"AngularAppta-ng-app="AngularApp"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"AngularAppta-ng-app="AngularApp"> <![endif]-->
 <!--[if !IE]><!-->
-<html lang="en" data-ng-app="APP">
+<html lang="en" data-ng-app="AngularApp">
     <!--<![endif]-->
     <!-- BEGIN HEAD -->
 
@@ -31,6 +31,8 @@
         <link href="templates/layout/css/themes/darkblue.css" rel="stylesheet" type="text/css" id="style_color" />
         <link href="templates/layout/css/custom.css" rel="stylesheet" type="text/css" />
         <!-- END THEME STYLES -->
+
+        <link href="bower_components/morris.js/morris.css" rel="stylesheet" type="text/css" />
         <link rel="shortcut icon" href="favicon.ico" /> </head>
 
     <body ng-controller="AppController" class="page-header-fixed page-sidebar-closed-hide-logo page-on-load" ng-class="{'page-content-white': settings.layout.pageContentWhite,'page-container-bg-solid': settings.layout.pageBodySolid, 'page-sidebar-closed': settings.layout.pageSidebarClosed}">
@@ -94,14 +96,26 @@
         <script src="bower_components/oclazyload/dist/ocLazyLoad.min.js" type="text/javascript"></script>
         <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js" type="text/javascript"></script>
         <!-- END CORE ANGULARJS PLUGINS -->
-        <!-- BEGIN APP LEVEL ANGULARJS SCRIPTS -->
+        <!-- BEAngularApp APP LEVEL ANGULARJS SCRIPTS -->
         <script src="main.js" type="text/javascript"></script>
         <script src="directives/directives.js" type="text/javascript"></script>
-        <!-- END APP LEVEL ANGULARJS SCRIPTS -->
-        <!-- BEGIN APP LEVEL JQUERY SCRIPTS -->
+        <!-- AngularApp APP LEVEL ANGULARJS SCRIPTS -->
+        <!-- BEAngularApp APP LEVEL JQUERY SCRIPTS -->
         <script src="templates/layout/scripts/layout.js" type="text/javascript"></script>
-        <!-- END APP LEVEL JQUERY SCRIPTS -->
+        <!-- AngularApp APP LEVEL JQUERY SCRIPTS -->
         <!-- END JAVASCRIPTS -->
+
+
+        <script src="bower_components/morris.js/morris.min.js" type="text/javascript"></script>
+        <script src="bower_components/raphael/raphael.min.js" type="text/javascript"></script>
+        <script src="bower_components/jquery-sparkline/dist/jquery.sparkline.min.js" type="text/javascript"></script>
+        <script src="templates/dashboard/dashboard.js" type="text/javascript"></script>
+        <script src="templates/dashboard/DashboardController.js" type="text/javascript"></script>
+
+        <script src="templates/blank/BlankController.js" type="text/javascript"></script>
+        <script src="templates/form-tools/formtools.js" type="text/javascript"></script>
+        <script src="templates/datatables/datatablesmanaged.js" type="text/javascript"></script>
+        <script src="templates/datatables/ajax-table.js" type="text/javascript"></script>
     </body>
     <!-- END BODY -->
 
